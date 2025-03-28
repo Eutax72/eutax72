@@ -1,36 +1,10 @@
 
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kontakt – Eutax72</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #f0f4f8; color: #222; padding: 30px; max-width: 600px; margin: auto; }
-    h2 { color: #003366; }
-    a { color: #003366; text-decoration: none; }
-    form { margin-top: 20px; }
-    input, textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; }
-    button { background: #003366; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
-    button:hover { background: #DAA520; color: #003366; }
-  </style>
-</head>
-<body>
-  <h2>📬 Kontakt</h2>
-  <p>📞 <strong>Telefon:</strong> <a href="tel:+495681930838">05681 / 930838</a></p>
-  <p>✉️ <strong>E-Mail:</strong> <a href="mailto:eutax72@pm.me">eutax72@pm.me</a></p>
-
-  <form action="mailto:eutax72@pm.me" method="post" enctype="text/plain">
-    <label for="name">Dein Name:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Deine E-Mail:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="message">Nachricht:</label>
-    <textarea id="message" name="message" rows="6" required></textarea>
-
-    <button type="submit">✅ Absenden</button>
-  </form>
-</body>
-</html>
+<h1>Kontakt</h1>
+<p><strong>Telefon:</strong> <a href="tel:+495681930838">05681 / 930838</a></p>
+<p><strong>E-Mail:</strong> <a href="mailto:eutax72@pm.me">eutax72@pm.me</a></p>
+<form action="mailto:eutax72@pm.me" method="post" enctype="text/plain">
+  <input type="text" name="name" placeholder="Dein Name" required><br><br>
+  <input type="email" name="email" placeholder="Deine E-Mail" required><br><br>
+  <textarea name="message" rows="6" placeholder="Nachricht..." required></textarea><br><br>
+  <button type="submit">Absenden</button>
+</form>
