@@ -1,87 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eutax72 – Steuererklärung in 72 Stunden</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Eutax72 – Steuererklärung in 72h</title>
   <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f4f7fb;
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: linear-gradient(90deg, #003366, #00509e);
-      color: white;
-      padding: 1.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header img {
-      height: 50px;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 20px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-      background-color: #ffffff;
-    }
-    .hero h1 {
-      font-size: 2.5em;
-      color: #003366;
-    }
-    .hero p {
-      font-size: 1.3em;
-      color: #333;
-      margin-top: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #003366;
-      color: white;
-      margin-top: 40px;
-    }
+    body { font-family: Arial, sans-serif; margin: 2rem auto; max-width: 900px; background: #f5f7fa; color: #003366; }
+    header { background: gold; padding: 1rem; border-radius: 10px; }
+    video { width: 100%; margin: 2rem 0; border: 2px solid #ccc; border-radius: 8px; }
+    nav ul { list-style: none; padding: 0; display: flex; gap: 1rem; flex-wrap: wrap; }
+    nav li { display: inline; }
+    nav a { text-decoration: none; font-weight: bold; color: #003366; }
+    footer { margin-top: 2rem; font-size: 0.9rem; }
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Euro_symbol_gold.svg" alt="Eutax72 Logo" />
-    <nav>
-      <ul>
-        <li><a href="/eutax72/leistungen.html">Leistungen</a></li>
-        <li><a href="/eutax72/upload.html">Upload</a></li>
-        <li><a href="/eutax72/buch.html">Buch</a></li>
-        <li><a href="/eutax72/kontakt.html">Kontakt</a></li>
-        <li><a href="/eutax72/impressum.html">Impressum</a></li>
-        <li><a href="/eutax72/datenschutz.html">Datenschutz</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="hero">
-    <h1>Willkommen bei <span style="color: #daa520;">Eutax72</span></h1>
-    <p>Steuererklärungen in 72 Stunden – schnell, sicher, persönlich.</p>
-  </section>
-  <footer>
-    &copy; 2025 Eutax72 – Alle Rechte vorbehalten
-  </footer>
+  <header><h1>Willkommen bei Eutax72</h1></header>
+  <p>Steuererklärungen in 72 Stunden – schnell, sicher, persönlich.</p>
+
+  <video controls autoplay muted>
+    <source src="intro-video.mp4" type="video/mp4">
+    Dein Browser unterstützt dieses Video nicht.
+  </video>
+
+  <nav>
+    <ul>
+      <li><a href="leistungen.html">Leistungen</a></li>
+      <li><a href="upload.html">Upload</a></li>
+      <li><a href="buch.html">Buch</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+      <li><a href="datenschutz.html">Datenschutz</a></li>
+    </ul>
+  </nav>
+
+  <footer>© 2025 Reiner Werner – Eutax72</footer>
 </body>
 </html>
