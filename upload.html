@@ -1,1 +1,31 @@
-<h1>Unterlagen hochladen</h1><p>Nutze dieses Formular, um deine Steuerunterlagen sicher zu übermitteln.</p>
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload – Eutax72</title>
+  <style>
+    body { font-family: 'Open Sans', sans-serif; background: #f4f7fb; color: #222; margin: 0; padding: 2rem; max-width: 800px; margin: auto; }
+    h1 { color: #003366; }
+    p { font-size: 1.1em; margin-bottom: 1.5rem; }
+    .upload-box { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    input[type="file"] { margin-top: 1rem; }
+    .hinweis { font-size: 0.95em; color: #666; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>📤 Unterlagen hochladen</h1>
+  <div class="upload-box">
+    <p>Du kannst hier sicher deine Steuerunterlagen übermitteln. Wir behandeln alle Daten streng vertraulich gemäß DSGVO.</p>
+
+    <form action="mailto:eutax72@pm.me" method="post" enctype="multipart/form-data">
+      <label for="file">Datei auswählen (z. B. PDF, JPG, PNG, ZIP):</label><br />
+      <input type="file" id="file" name="file" accept=".pdf,.jpg,.jpeg,.png,.zip" required><br><br>
+      <button type="submit">Jetzt hochladen</button>
+    </form>
+
+    <p class="hinweis">Hinweis: Alternativ kannst du deine Unterlagen auch per E-Mail an <a href="mailto:eutax72@pm.me">eutax72@pm.me</a> senden.</p>
+  </div>
+</body>
+</html>
