@@ -10,22 +10,31 @@
     h1 { color: #003366; }
     p { font-size: 1.1em; margin-bottom: 1.5rem; }
     .upload-box { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
-    input[type="file"] { margin-top: 1rem; }
+    input, textarea { width: 100%; padding: 10px; margin-top: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; }
+    button { background: #003366; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #00509e; }
     .hinweis { font-size: 0.95em; color: #666; margin-top: 1rem; }
   </style>
 </head>
 <body>
   <h1>📤 Unterlagen hochladen</h1>
   <div class="upload-box">
-    <p>Du kannst hier sicher deine Steuerunterlagen übermitteln. Wir behandeln alle Daten streng vertraulich gemäß DSGVO.</p>
+    <p>Nutze dieses Formular, um deine Steuerunterlagen sicher zu übermitteln. Alle Angaben werden vertraulich behandelt und unterliegen dem Datenschutz (DSGVO).</p>
 
-    <form action="mailto:eutax72@pm.me" method="post" enctype="multipart/form-data">
-      <label for="file">Datei auswählen (z. B. PDF, JPG, PNG, ZIP):</label><br />
-      <input type="file" id="file" name="file" accept=".pdf,.jpg,.jpeg,.png,.zip" required><br><br>
-      <button type="submit">Jetzt hochladen</button>
+    <form action="mailto:eutax72@pm.me" method="post" enctype="text/plain">
+      <label for="name">Dein Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Deine E-Mail-Adresse:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="nachricht">Zusätzliche Nachricht (optional):</label>
+      <textarea id="nachricht" name="nachricht" rows="5" placeholder="Zum Beispiel: Hier sind meine Unterlagen für das Steuerjahr 2024."></textarea>
+
+      <p class="hinweis">Für den Upload von Dateien sende deine Unterlagen bitte direkt per E-Mail an <a href="mailto:eutax72@pm.me">eutax72@pm.me</a> oder nutze unseren sicheren Upload-Link (auf Anfrage).</p>
+
+      <button type="submit">Nachricht senden</button>
     </form>
-
-    <p class="hinweis">Hinweis: Alternativ kannst du deine Unterlagen auch per E-Mail an <a href="mailto:eutax72@pm.me">eutax72@pm.me</a> senden.</p>
   </div>
 </body>
 </html>
