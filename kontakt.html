@@ -1,1 +1,27 @@
-<html><body><h1>Kontakt</h1><p>Telefon: 05681 / 930838<br>E-Mail: eutax72@pm.me</p></body></html>
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – Eutax72</title>
+</head>
+<body>
+  <h2>Kontakt</h2>
+  <p><strong>Telefon:</strong> <a href="tel:+495681930838">05681 / 930838</a></p>
+  <p><strong>E-Mail:</strong> <a href="mailto:eutax72@pm.me">eutax72@pm.me</a></p>
+
+  <form action="mailto:eutax72@pm.me" method="post" enctype="text/plain">
+    <label for="name">Dein Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Deine E-Mail:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Nachricht:</label><br>
+    <textarea id="message" name="message" rows="6" required></textarea><br><br>
+
+    <button type="submit">Absenden</button>
+  </form>
+</body>
+</html>
